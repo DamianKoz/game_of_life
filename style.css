@@ -1,0 +1,54 @@
+html {
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.grid {
+  height: 85vh;
+  width: 90vw;
+  margin-top: 10px;
+  margin-left: 5vw;
+  display: grid;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cell {
+  flex: 1;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+}
+
+.alive {
+  background-color: aqua;
+}
+
+.dead {
+  background-color: transparent;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-label {
+  display: flex;
+  flex-direction: column;
+}

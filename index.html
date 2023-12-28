@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Game of Life</h1>
+      <div class="slider-container">
+        <div class="slider-label">
+          <label for="rowsSlider">Rows:</label>
+          <input
+            type="range"
+            id="rowsSlider"
+            min="3"
+            max="50"
+            step="1"
+            value="15"
+          />
+        </div>
+        <div class="slider-label">
+          <label for="columnsSlider">Columns:</label>
+          <input
+            type="range"
+            id="columnsSlider"
+            min="3"
+            max="50"
+            step="1"
+            value="21"
+          />
+        </div>
+        <div class="slider-label">
+          <label for="speedSlider">Simulation Speed:</label>
+          <input
+            type="range"
+            id="speedSlider"
+            min="50"
+            max="1000"
+            step="50"
+            value="100"
+          />
+          <div id="speedLabel"></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
