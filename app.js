@@ -147,6 +147,6 @@ function initBoard(rows, columns, isInitialLoad = false) {
 }
 
 startButton.addEventListener("click", () => startGameOfLife(arr));
-resetButton.addEventListener("click", () => initBoard(15, 20));
+resetButton.addEventListener("click", () => initBoard(15, 21));
 
 initBoard(15, 21, true);
